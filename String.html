@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>-------String Compare-------</h1>
+    String-1:<input type="text" id="str1" autofocus> &nbsp;&nbsp;Length:<input type="text" id="len1" disabled><br><br>
+    String-2:<input type="text" id="str2"> &nbsp;&nbsp;Length:<input type="text" id="len2" disabled><br><br>
+
+    Result:<input type="text" id="res" disabled><br><br>
+    <button type="button" onclick="show()">Check</button>
+<script>
+    function show(){
+
+    let str1=document.getElementById("str1").value;
+    let str2=document.getElementById("str2").value;
+    let len1=str1.length;
+    let len2= str2.length;
+    if(str1==str2){
+        document.getElementById("res").value="True";
+    }
+    else{
+        document.getElementById("res").value="Flase";
+    }
+    document.getElementById("len1").value=len1;
+    document.getElementById("len2").value=len2;
+}
+</script>
+</body>
+</html>

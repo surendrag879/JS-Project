@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Find Largest Number</h1>
+    
+    A:<input type="text" id="num1"><br><br>
+    
+    B:<input type="text" id="num2"><br><br>
+
+    C:<input type="text" id="num3"><br><br>
+
+    
+    Result:<input type="text" id="result"><br><br>
+    <button type="button" onclick="show()">Ok</button>
+
+    <script>
+        function show() {
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let c = parseInt(document.getElementById("num3").value);
+            let res;
+
+            if (a > b && a > c) {
+                res = "A is Largest Number";
+            }
+            else if (b > c) {
+                res = "B is Largest Number";
+            }
+            else {
+                res = "C is Largest Number";
+            }
+            document.getElementById("result").value = res;
+
+        }
+    </script>
+
+</body>
+
+</html>
