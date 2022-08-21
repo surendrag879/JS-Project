@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.admin {
+            width: 30%;
+            height: 400px;
+            margin: auto;
+            margin-top: 150PX;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            color: wheat;
+            /* box-shadow: 0 1px 2px black; */
+        }
+        .admin-text{
+            letter-spacing: 3px;
+            color: mediumseagreen;
+        }
+        input {
+            height: 40px;
+            width: 80%;
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: inherit;
+            line-height: 30px;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+        }
+
+        input::placeholder {
+            color: black;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 120px;
+            height: 40px;
+            margin: 50px 0 0 0;
+            border-radius: 10px;
+            border: none;
+            background-color: aqua;
+            box-shadow: 0 0 50px cyan;
+            cursor: pointer;
+        }
+
+        input:focus-visible {
+            outline: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header></header> -->
+    <div class="admin" id="admin">
+
+        <h1 class="admin-text">Admin - Login</h1>
+
+        <div class="admin-pic"><img src="#" alt=""></div>
+
+        <form class="admin-content" action="#admin-panel.html" method="get">
+
+            <input type="text" name="uname" id="uname" placeholder="Username" required autofocus>
+            <input type="password" name="pass" id="pass" placeholder="Password" required>
+
+            <button type="submit" onclick="login()" value="Login" id="btn" class="btn">Login</button>
+        </form>
+
+    </div>
+
+    <script>
+        function login() {
+            var n1 = document.getElementById('uname').value;
+            var n2 = document.getElementById('pass').value;
+            if (n1 == "surendra" && n2 == "1234") {
+                window.alert("Login Successfully");
+            }
+            else {
+                window.alert("wrong Username & password")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

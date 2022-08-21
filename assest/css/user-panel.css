@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 5px 1px black;
+
+
+}
+
+h1 {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 16px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.5s ease 0s;
+}
+
+nav a:hover {
+
+    color: #b2dfdb;
+}
+
+
+#image {
+    clear: both;
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    width: 23%;
+    height: 252px;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+
+.gallery:hover {
+    /* border: 1px solid red; */
+    outline: 5px solid #04AA6D;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 200px;
+    opacity: 0.5;
+}
+
+div.gallery img:hover {
+    opacity: 1;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: dimgrey;
+}
+
+#form-flower {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+#form {
+    max-width: 45.5%;
+    float: left;
+    padding: 15px;
+    background-color: #f2f2f2;
+    clear: both;
+}
+
+#form label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+#form input[type=text],
+#form [type=email],
+#form select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#form input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#form input[type=submit]:hover {
+    background-color: #04AA6D
+}
+
+#flower {
+    margin-left: 20px;
+    width: 46%;
+    float: left;
+    padding: 15px;
+    background-image: url(/assest/images/flower.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+figure img {
+    -webkit-box-reflect: right;
+    object-fit: cover;
+    width: 200px;
+    /* background-size: cover; */
+}
+
+footer {
+    background-color: black;
+    color: wheat;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+footer div {
+    display: block;
+    width: 24%;
+    float: left;
+    line-height: 2;
+}
+
+footer p {
+    color: white;
+}
+
+footer div a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer input[type=email] {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+}
+
+footer input[type=submit] {
+    padding: 9px;
+    background-color: #04AA6D;
+}
