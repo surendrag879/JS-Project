@@ -2,41 +2,35 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/assest/css/weather.css">
+    <script src="/assest/js/weather.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-image: url("/");
-        }
-    </style>
+    <title>Weather-app</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="text-box">
+    <div class="container">
+        <div class="srhbox">
             <!-- <form> -->
-                <input type="text" id="text1" name="text1" placeholder="enter city name" required>
-                <button id="btn" onclick="btn()">Search</button>
+            <input type="text" class="input-box" id="text" placeholder="Enter city name" required>
+            <button id="btn" onclick="getWeather()">Search</button>
             <!-- </form> -->
         </div>
-<div class="weather-body">
-    <div class="location-details">
-        <div class="city">kota, IN</div>
-        <div class="date">1-1-2022</div>
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city"></div>
+                <div class="date"></div>
+            </div>
+            <div class="weather-status">
+                <div class="temp"></div>
+                <div class="min-max"></div>
+                <div class="weather"></div>
+                <div class="img"></div>
+            </div>
+        </div>
     </div>
-<div class="weather-status">
-        <div class="temp">34&deg;c</div>
-        <div class="min-max">24&deg;c(min) / 42&deg;c(max)</div>
-        <div class="weather">clear</div>
-        <div class="img"></div>
-</div>
-    </div>
-
 </body>
 
 </html>
