@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Document</title>
+    <style> 
+    body{
+        margin:0 ;
+        background-image: url("/assest/images/bg1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+        header h1{
+            color: wheat;
+            text-align: center;
+        }
+        main .first {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: gray;
+            border-radius: 20px;
+        }
+        .first a{
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .first a:hover{
+            background-color: green;
+            color: white;
+        }
+        .first a:hover:first-child{
+            border-radius: 20px 0 0 20px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="head-text"> Welcome to Index page </h1>
+    </header>
+    <main> 
+        <div class="first">
+            <a href="/string.html">String Example</a> 
+            <a href="/calc.html">Calculator Example</a> 
+            <a href="/admin.html"> Admin Panel </a>
+            <a href="/login.html"> Login Page </a>
+            <a href= "/register.html"> register page</a>
+            <a href="/user-panel.html">user-panel</a>
+        </div>
+    </main>
+</body>
+</html>
