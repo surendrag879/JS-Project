@@ -3,36 +3,92 @@
     padding: 0;
 }
 
-header {
-    box-shadow: 0 0 1px 1px black;
-    margin: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: blue;
+body {
+    background-image: url('/assest/images/Colorful.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-header h1 {
-    letter-spacing: 2px;
+header {
+   
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
 }
 
 .container {
-    height: auto;
-    justify-content: center;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    background-color: white;
     margin: 10px;
-}
-
-.logo {
-    left: 0;
+    border-radius: 20px;
 }
 
 img {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
-div .task-input{
-  bottom: 100px;
-    float: right;
+
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
+ .task input{
+    width: 200px;
+    height: 30px;
+    /* border: none;  */
+    outline: none;
+    border-radius: 10px;
+} 
+.task button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 50px;
+    background-color:mediumseagreen
+}
+.task button:hover{
+    background-color: gray;
+}
+.task-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: DodgerBlue;
+  }
+  
+  .task-container > div {
+    width: 100%;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    /* font-size: 30px; */
+  }
+
+  .task-container .title {
+    font-size: medium;
+    text-shadow: 5px;
+  }
+  .taskbox {
+    border: 1px solid black;
+    padding: 10px;
+    height: 200px;
+    /* min-height: 70vh; */
+    /* overflow: scroll; */
+    overflow: hidden;
+  }
+
+  .taskbox span{
+    border: 1px dotted green;
+    padding: 5px;
+  }
