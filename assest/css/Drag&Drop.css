@@ -60,6 +60,9 @@ img {
 .task button:hover{
     background-color: gray;
 }
+#btn{
+  margin-left: 10px;
+}
 .task-container {
     display: flex;
     align-items: center;
